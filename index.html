@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final HTML Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap --> <!-- Learn bootstrap: https://www.w3schools.com/bootstrap/default.asp -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="finalform.css">
+	</head>
+
+<body>
+
+<div class="container">
+	<form class="" action="index.html" method="post">
+
+		<div class="header text-center">
+			<h2><strong>Student Registration Form</strong></h2>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#para"><b>Click to read about this form</b></button>
+  			<div id="para" class="collapse">
+    			<p>
+					This is a registration form for students to enrol in HTML5, CSS, JavaScript or all three courses. <br> I choose this form because I wanted to challenge myself and see if I would be able to accomplish it. <br>I did face some difficulties, but with the step by step help from W3schools, <br>
+					I was able to create this form. Hope you guys like it.
+				</p>
+  			</div>
+		</div>
+
+		<br />
+
+		<div class="allInput">
+				<input type="text" name="fname" id="fname" onblur="checkField('fname', 'sfname', 'first name')" placeholder="First Name"><br />
+				<span id="sfname"> </span>
+				<br />
+
+				<input type="text" name="lname" id="lname" onblur="checkField('lname', 'slname', 'last name')" placeholder="Last Name"><br />
+				<span id="slname"> </span> <br />
+
+				<!-- Address -->
+				<label>Address:</label> <br />
+					<input type="text" name="address" id="address" onblur="checkField('address', 'saddress', 'address')" placeholder="Address"><br />
+					<span id="saddress"> </span><br />
+
+				<label>City:</label> <br />
+					<input type="text" name="city" id="city" onblur="checkField('city', 'scity', 'city')"> <br/>
+					<span id="scity"> </span><br />
+
+				<label>State:</label> <br />
+				<div class="row">
+					<div class="col-sm-6"><input type="text" name="state" id="state" onblur="checkField('state', 'sstate', 'state')"  maxlength="2" placeholder="NY" required>
+						<span id="sstate">  </span>
+					</div>
+					<div class="col-sm-6"><input type="text" name="zipcode" id="zipcode" onblur="checkField('zipcode', 'szipcode', 'zipcode')" placeholder="zipcode" required>
+						<span id="szipcode"> </span>
+					</div>
+				</div>
+
+				<br />
+
+				<!-- Course -->
+				<label>Select a course:</label> <br />
+					<div class="row" onmouseout="selectCourse('html', 'css', 'js', 'all-3', 'scourse')">
+						<div class="col-sm-6"><input type="checkbox" id="html" required>HTML</div>
+						<div class="col-sm-6"><input type="checkbox" id="css" required>CSS</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6"><input type="checkbox" id="js" required>Javascript</div>
+						<div class="col-sm-6"><input type="checkbox" id="all-3" required>All three</div>
+					</div>
+					<span id="scourse"> </span>
+				<br />
+
+				<label>Gender: </label>
+			    <div class="row">
+						<div class="col-sm-6"> <input type="radio" name="gender" id="male" value="male" /> Male
+
+            <input type="radio" name="gender" id="female" value="female" /> Female</div>
+
+
+			    </div><br />
+
+			<!-- Terms of Use -->
+			<div class="row text-center">
+				<div class="col-sm-12">
+		    		<p class="terms">By creating an account you agree to the <b><a href="https://www.coursera.org/about/terms" target="_blank">Terms of Use</a></b>.</p>
+				</div>
+			</div>
+
+				<button type="button" id="register" onclick="validateForm()">Register</button>
+		</div>
+
+	</form>
+</div>
+
+<script type="text/javascript" src="finalform.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+body {
+    background-image: url("http://68.media.tumblr.com/fb812071e4e66b5b1fadce9aa43f1734/tumblr_inline_mr8fesxeWz1qz4rgp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 6px solid #d05d09;
+
+   /* background-image: url("http://68.media.tumblr.com/fb812071e4e66b5b1fadce9aa43f1734/tumblr_inline_mr8fesxeWz1qz4rgp.jpg");
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-attachment: fixed; /* The background-image is fixed. Try to scroll down the page. */
+}
+.header h2 {
+    color:  #005b96;
+    position: relative;
+    bottom: 30px;
+
+}
+.header p {
+    color: #005b96;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form { width: 100%; }
+
+.formInnerStyle {
+    position: relative;
+    /*left: 125px; */
+}
+
+/.row .col-sm-4 .gender {
+    margin-right: 0px;
+  /*  margin-left: 4px */
+ }
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.terms a { color: #2175d9; }
+
+
+button[type=button] {
+    background-color: #00d27f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type=button]:hover {
+    background-color: #005b96;
+}
+
+button.btn, #para { margin-bottom: 20px; }
+
+#state { text-transform: uppercase; }
+
+.container {
+    border-radius: 5px;
+
+    /*border: 1px solid #2175d9;*/
+    padding: 50px;
+    width: 40%;
+    /*box-shadow: 5px 5px 10px #bbbbbb; */
+   /* margin-bottom: 100px; */
+    position: relative;
+   /* right: 65px; */
+}
